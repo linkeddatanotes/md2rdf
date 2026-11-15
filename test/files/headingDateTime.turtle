@@ -1,0 +1,15 @@
+@base <test:headingDateTime> .
+PREFIX md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+<#2015-12-12-Saturday-at-COP-21> a schema:PublicEvent, md2rdf:Section;
+  rdfs:label "2015-12-12 Saturday at COP 21";
+  md2rdf:headingLevel "1";
+  schema:temporalCoverage "2015-12-12";
+  schema:organizer <http://www.wikidata.org/entity/Q104150918>.
+
+<#19%3A25-Adoption-of-the-Paris-Agreement> a md2rdf:Section;
+  rdfs:label "19:25 Adoption of the Paris Agreement";
+  md2rdf:headingLevel "2";
+  schema:temporalCoverage "2015-12-12T19:25".

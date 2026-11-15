@@ -1,0 +1,9 @@
+@base <test:min> .
+@prefix adhoc: <https://www.linkeddatanotes.org/ns/adhoc/> .
+@prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<#A-minimal-test> a md2rdf:Section;
+  rdfs:label "A minimal test";
+  md2rdf:headingLevel "1";
+  adhoc:relatedto <http://www.example.com> .

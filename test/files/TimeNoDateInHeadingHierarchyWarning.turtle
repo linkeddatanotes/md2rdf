@@ -1,0 +1,9 @@
+@base <test:TimeNoDateInHeadingHierarchyWarning> .
+PREFIX schema: <https://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/>
+
+<#2020-01-24-Painting> a schema:VisualArtsEvent, md2rdf:Section;
+  md2rdf:headingLevel "1";
+  schema:temporalCoverage "2020-01-24";
+  rdfs:label "2020-01-24 Painting".

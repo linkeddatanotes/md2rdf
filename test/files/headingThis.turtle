@@ -1,0 +1,23 @@
+@base <test:headingThis> .
+@prefix adhoc: <https://www.linkeddatanotes.org/ns/adhoc/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+<#First-heading> a md2rdf:Section;
+  rdfs:label "First heading";
+  md2rdf:headingLevel "1";
+  adhoc:relatedto <http://www.example.com> .
+
+<#Lunch-Meeting> 
+  a adhoc:Meeting, md2rdf:Section;
+  rdfs:label "Lunch Meeting";
+  md2rdf:headingLevel "2";
+  adhoc:attendee <https://example.com/user/Alice>;
+  adhoc:attendee <#Bob> .
+  
+<#Bob> a foaf:Person, md2rdf:Section;
+  rdfs:label "Bob";
+  md2rdf:headingLevel "1";
+  foaf:nick "Bob" .

@@ -1,0 +1,80 @@
+# common namespaces shipped with LinkedDataNotes
+# URL:      https://www.linkeddatanotes.org/ns/commonNamespaces.ttl 
+# Created:  2021-02-10
+# Modified: 2026-10-25
+# README:   https://www.linkeddatanotes.org/ns/commonNamespaces
+#
+# This builds on reading and interpreting the following sources from the RDF community:
+#
+# W3C rdfa
+# https://www.w3.org/2010/02/rdfa/drafts/default_prefixes.html
+#
+# solid-namespace
+# https://github.com/solid/solid-namespace/blob/master/index.js 
+
+@prefix acl: <http://www.w3.org/ns/auth/acl#> .
+@prefix arg: <http://www.w3.org/ns/pim/arg#> .
+@prefix as: <https://www.w3.org/ns/activitystreams#> .
+@prefix bookmark: <http://www.w3.org/2002/01/bookmark#> .
+@prefix cal: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix cert: <http://www.w3.org/ns/auth/cert#> .
+@prefix contact: <http://www.w3.org/2000/10/swap/pim/contact#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix gpx: <http://www.w3.org/ns/pim/gpx#> .
+@prefix gr: <http://purl.org/goodrelations/v1#> .
+@prefix grddl: <http://www.w3.org/2003/g/data-view#> .
+@prefix http: <http://www.w3.org/2007/ont/http#> .
+@prefix httph: <http://www.w3.org/2007/ont/httph#> .
+@prefix icalTZ: <http://www.w3.org/2002/12/cal/icaltzd#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+@prefix link: <http://www.w3.org/2007/ont/link#> .
+@prefix log: <http://www.w3.org/2000/10/swap/log#> .
+@prefix meeting: <http://www.w3.org/ns/pim/meeting#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix nrl: <https://www.semanticdesktop.org/ontologies/2007/08/15/nrl/#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix pad: <http://www.w3.org/ns/pim/pad#> .
+@prefix patch: <http://www.w3.org/ns/pim/patch#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix pto: <http://www.productontology.org/id/> .
+@prefix qu: <http://www.w3.org/2000/10/swap/pim/qif#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfa: <http://www.w3.org/ns/rdfa#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rif: <http://www.w3.org/2007/rif#> .
+@prefix rss: <http://purl.org/rss/1.0/> .
+@prefix sched: <http://www.w3.org/ns/pim/schedule#> .
+@prefix schema: <https://schema.org/>  .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix solid: <http://www.w3.org/ns/solid/terms#> .
+@prefix space: <http://www.w3.org/ns/pim/space#> .
+@prefix stat: <http://www.w3.org/ns/posix/stat#> .
+@prefix tab: <http://www.w3.org/2007/ont/link#> .
+@prefix tabont: <http://www.w3.org/2007/ont/link#> .
+@prefix trip: <http://www.w3.org/ns/pim/trip#> .
+@prefix ui: <http://www.w3.org/ns/ui#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix wdr: <http://www.w3.org/2007/05/powder#> .
+@prefix wdrs: <http://www.w3.org/2007/05/powder-s#> .
+@prefix wf: <http://www.w3.org/2005/01/wf/flow#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xmlns: <http://www.w3.org/2000/xmlns/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# LinkedDataNotes: The adhoc namespace as explicit namespace
+@prefix adhoc: <https://www.linkeddatanotes.org/ns/adhoc/> .
+# LinkedDataNotes: The adhoc namespace as implicit namespace of the current file
+@prefix : <https://www.linkeddatanotes.org/ns/adhoc/> .
+
+# LinkedDataNotes: md2rdf
+@prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .

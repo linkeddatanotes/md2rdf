@@ -1,0 +1,58 @@
+{
+  "name": "@linkeddatanotes/md2rdf",
+  "version": "0.0.4",
+  "description": "Reads a Markdown string, detects linked data according to the LinkedDataNotes convention, and returns the linked data.",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "build/src/index.js",
+  "types": "build/src/index.d.ts",
+  "files": [
+    "build/src"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linkeddatanotes/md2rdf.git"
+  },
+  "homepage": "https://github.com/linkeddatanotes/md2rdf#readme",
+  "bugs": {
+    "url": "https://github.com/linkeddatanotes/md2rdf/issues"
+  },
+  "keywords": [
+    "linkeddata",
+    "linkeddatanotes",
+    "markdown",
+    "rdf",
+    "rdfjs"
+  ],
+  "scripts": {
+    "test": "mocha build/test/*test*.js",
+    "lint": "gts lint",
+    "fix": "gts fix",
+    "clean": "gts clean",
+    "precompile": "gts clean",
+    "compile": "tsc",
+    "postcompile": "node -e \"require('fs').copyFileSync('src/commonNamespaces.ttl','build/src/commonNamespaces.ttl')\"",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint",
+    "prepare": "npm run compile",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags",
+    "prepublishOnly": "npm test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/n3": "^1.26.1",
+    "@types/node": "^22.7.5",
+    "@types/rdfjs__namespace": "^2.0.10",
+    "gts": "^7.0.0",
+    "mocha": "^12.0.1",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "@rdfjs/namespace": "^2.0.1",
+    "@rdfjs/types": "^2.0.1",
+    "n3": "^2.0.1"
+  }
+}

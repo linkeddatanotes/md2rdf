@@ -1,0 +1,12 @@
+@base <test:headingToFragment> .
+@prefix adhoc: <https://www.linkeddatanotes.org/ns/adhoc/> .
+@prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<#Queen> a adhoc:Band, adhoc:FemaleMonarch, md2rdf:Section;
+  rdfs:label "Queen";
+  md2rdf:headingLevel "1".
+
+<#sch%C3%B6n-%F0%9F%98%80> a adhoc:Sentiment, md2rdf:Section;
+  rdfs:label "schön 😀";
+  md2rdf:headingLevel "1".

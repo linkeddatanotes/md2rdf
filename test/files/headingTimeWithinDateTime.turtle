@@ -1,0 +1,15 @@
+@base <test:headingTimeWithinDateTime> .
+@prefix adhoc: <https://www.linkeddatanotes.org/ns/adhoc/> .
+@prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+
+<#2020-01-26-13%3A00-afternoon> a md2rdf:Section;
+  rdfs:label "2020-01-26 13:00 afternoon";
+  md2rdf:headingLevel "2";
+  schema:temporalCoverage "2020-01-26T13:00".
+
+<#14%3A00-Specific-time> a adhoc:Realization, md2rdf:Section;
+  rdfs:label "14:00 Specific time";
+  md2rdf:headingLevel "3";
+  schema:temporalCoverage "2020-01-26T14:00".

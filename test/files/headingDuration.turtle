@@ -1,0 +1,14 @@
+@base <test:headingDuration> .
+PREFIX md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX schema: <https://schema.org/>
+
+<#1967-06-25-20%3A54---21%3A02-The-Beatles-live-on-Our-World> a schema:MusicEvent, schema:PerformingArtsEvent, md2rdf:Section;
+  rdfs:label "1967-06-25 20:54 - 21:02 The Beatles live on Our World";
+  md2rdf:headingLevel "1";
+  schema:temporalCoverage "1967-06-25T20:54/1967-06-25T21:02".
+
+<#1966-11-29%2F1967-11-07-Recording-of-the-Magical-Mystery-Tour-LP> a schema:Event, md2rdf:Section;
+  rdfs:label "1966-11-29/1967-11-07 Recording of the Magical Mystery Tour LP";
+  md2rdf:headingLevel "1";
+  schema:temporalCoverage "1966-11-29/1967-11-07".

@@ -1,0 +1,5 @@
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+<test:codefences#1> rdfs:label "1".
+<test:codefences#2> rdfs:label "2".
+<test:codefences#3> rdfs:label "3".
+<test:codefences#4> rdfs:label "4".

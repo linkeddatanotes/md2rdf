@@ -1,0 +1,8 @@
+@base <test:HomonymHeadingWarning> .
+@prefix adhoc: <https://www.linkeddatanotes.org/ns/adhoc/> .
+@prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<#Tools> a md2rdf:Section, adhoc:GardenToolsList;
+  rdfs:label "Tools";
+  md2rdf:headingLevel "2".
