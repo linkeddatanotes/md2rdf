@@ -14,7 +14,7 @@ The returned `rdfjs Stream<Quad>` can be passed to `quadstore.import()`.
 
 ## Installation
 
-`npm install @linkeddatanotes/md2rdf'
+`npm install @linkeddatanotes/md2rdf`
 
 ## Parsing markdown files
 
@@ -31,7 +31,7 @@ const options = {
   // defines common namespaces such as schema
   namespaces: commonNamespaces(),
   // contains a date
-  baseIRI: 'file://2025-12-12_ParisAgreement.md',
+  baseIRI: 'file://2015-12-12_ParisAgreement.md',
 };
 
 // a sample markdown including LinkedDataNotes
@@ -69,7 +69,7 @@ See more example code there.
 
 ## License
 
-- [ ] TODO: decide license for this
+This project is licensed under the [MIT License](LICENSE).
 
 This uses 
 - [solid-namespace](https://github.com/solid/solid-namespace/blob/master/index.js) which is MIT licensed.
@@ -91,7 +91,7 @@ PREFIX md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX schema: <https://schema.org/>
 
-<file://2025-12-12_ParisAgreement.md#2015-12-12-Saturday-at-COP-21> a schema:PublicEvent, md2rdf:Section;
+<file://2015-12-12_ParisAgreement.md#2015-12-12-Saturday-at-COP-21> a schema:PublicEvent, md2rdf:Section;
   rdfs:label "2015-12-12 Saturday at COP 21";
   md2rdf:headingLevel "1";
   schema:temporalCoverage "2015-12-12";
