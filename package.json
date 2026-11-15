@@ -1,6 +1,6 @@
 {
   "name": "@linkeddatanotes/md2rdf",
-  "version": "0.0.4",
+  "version": "0.0.5-0",
   "description": "Reads a Markdown string, detects linked data according to the LinkedDataNotes convention, and returns the linked data.",
   "publishConfig": {
     "access": "public"
