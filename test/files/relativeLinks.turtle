@@ -1,0 +1,5 @@
+<file://test/sub/dir/relativeLinks.md#> <https://schema.org/relatedLink> 
+  <file://test/sub/dir/same.md>,
+  <file://test/sub/inParent.md>,
+  <file://test/sub/dir/sub/inSub.md>,
+  <file://test/parallel/far.md>.

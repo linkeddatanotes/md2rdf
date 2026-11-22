@@ -28,14 +28,22 @@ const defaultOptions = {
  * that the files/<testname>.md
  * parses into the turtle in files/<testname>.turtle
  * @param testname name of the test file
+ * @param optionsOverride optional Md2Rdf options that override the defaults
  * @returns the loaded contents of the test file
  */
-function assertTurtleEqual(testname: string) {
+function assertTurtleEqual(
+  testname: string,
+  optionsOverride?: Partial<typeof defaultOptions>,
+) {
   const mdString = readFileSync(
     join(__dirname, '..', '..', 'test', 'files', testname + '.md'),
     'utf-8',
   );
-  const md2rdf = new Md2Rdf({...defaultOptions, baseIRI: 'test:' + testname});
+  const md2rdf = new Md2Rdf({
+    ...defaultOptions,
+    baseIRI: 'test:' + testname,
+    ...optionsOverride,
+  });
   const quads = md2rdf.parseString(mdString).quads;
   assert.equal(
     toSortedString(quads),
@@ -226,6 +234,12 @@ describe('Md2Rdf.Parse.test.js', () => {
 
   it('namespaceOverride', () => {
     assertTurtleEqual('namespaceOverride');
+  });
+
+  it('relativeLinks', () => {
+    assertTurtleEqual('relativeLinks', {
+      baseIRI: 'file://test/sub/dir/relativeLinks.md',
+    });
   });
 
   it('TimeNoDateInHeadingHierarchyWarning', () => {
