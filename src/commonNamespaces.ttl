@@ -37,7 +37,8 @@
 @prefix log: <http://www.w3.org/2000/10/swap/log#> .
 @prefix meeting: <http://www.w3.org/ns/pim/meeting#> .
 @prefix mo: <http://purl.org/ontology/mo/> .
-@prefix nrl: <https://www.semanticdesktop.org/ontologies/2007/08/15/nrl/#> .
+@prefix nfo: <http://www.semanticdesktop.org/ontologies/2007/03/22/nfo#> .
+@prefix nrl: <http://www.semanticdesktop.org/ontologies/2007/08/15/nrl#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pad: <http://www.w3.org/ns/pim/pad#> .
@@ -78,3 +79,6 @@
 
 # LinkedDataNotes: md2rdf
 @prefix md2rdf: <https://www.linkeddatanotes.org/ns/md2rdf/> .
+
+# LinkedDataNotes: obsidian
+@prefix obsidian: <https://www.linkeddatanotes.org/ns/obsidian/> .
